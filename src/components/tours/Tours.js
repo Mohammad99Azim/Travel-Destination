@@ -1,14 +1,16 @@
+import './Tours.css'
+
 function Tours(prop) {
     
     return (
-        
-            <div>
-           <p>
+        <>
+            <div className="tour">
+           <h2>
            {prop.name}
-           </p> 
+           </h2> 
            <img src={prop.image} alt="" />
             </div>
-        
+        </>
     );
     
 }
