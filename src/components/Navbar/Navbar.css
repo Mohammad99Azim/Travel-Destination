@@ -1,0 +1,45 @@
+.navBar {
+    background-color: #000000;
+    border-bottom: 5px #D82B2A solid;
+    color: white;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+}
+
+.liksBar {
+    margin-right: 20px;
+    font-weight: 600;
+    color: #FFF;
+    text-decoration: none;
+    padding: 6px 7px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-out;
+}
+
+.liksBar:hover {
+    background-color: red;
+}
+
+.iconLinks {
+    font-size: 22px;
+}
+
+.icon:not(:last-child) {
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.yout:hover {
+    color: #C31A1E;
+}
+
+.face:hover {
+    color: #3F77F3;
+}
+
+.inst:hover {
+    color: #9744db;
+}

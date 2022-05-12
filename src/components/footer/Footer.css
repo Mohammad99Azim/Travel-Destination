@@ -1,0 +1,22 @@
+footer {
+    background-color: #faf9f9;
+    height: 64px;
+    padding: 10px 0;
+}
+
+.footerLinks {
+    margin: auto;
+    width: 60%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLinks a {
+    color: #DF302B;
+    text-decoration: none;
+}
+
+.copyRight {
+    text-align: center;
+}

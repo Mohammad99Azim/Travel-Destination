@@ -1,0 +1,8 @@
+.tour:not(:last-of-type) {
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 400;
+}
