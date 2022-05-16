@@ -1,4 +1,5 @@
-import { Text } from "react-native";
+// import { Text } from "react-native";
+
 import { useState } from 'react';
 import Footer from '../footer/Footer'
 import Navbar from '../Navbar/Navbar'
@@ -31,11 +32,9 @@ export default function TourDetails() {
                     <img src= {result[0].image} alt={result[0].name}></img>
                     <div className='infoText'>
 
-          
-                    
-                    <Text numberOfLines= {isShown ? 0 : 3 } ellipsizeMode="middle" ><p>{result[0].info}</p></Text>
-                   
-                    
+                    {isShown ? <p>{result[0].info}</p> : <p>{result[0].info.substring(0,250)}...</p> }
+                    {/* <Text numberOfLines= {isShown ? 0 : 3 } ellipsizeMode="middle" ><p>{result[0].info}</p></Text> */}
+                       
                     <button onClick={showMoreText}>
                          {isShown ? <span>see less <FontAwesomeIcon icon={faAngleDoubleUp} /></span> : <span>see more <FontAwesomeIcon icon={faAngleDoubleDown} /></span> }
                     </button>
